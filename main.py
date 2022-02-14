@@ -44,7 +44,7 @@ async def on_message(message):
     print(f'{message.author} said {message.content}')
 
     if '😭' in message.content:
-        sad_things = ['😭W😭H😭Y😭', '😭', 'NOOOOOOOOOOOOOOOOOOOO WHHHHYYYYYYYY😭😭😭', '😭😭😭']
+        sad_things = ['EMOJI SAD FACE HERE']
         await message.channel.send(f'DETECTED SADNESS; RUNNING ROUTINE \"EMPATHY\; {choice(sad_things)}')
     
     words = message.content.split(' ')
