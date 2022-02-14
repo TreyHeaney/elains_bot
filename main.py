@@ -1,4 +1,8 @@
 import discord
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # class MyClient(discord.Client):
 #     async def on_ready(self):
@@ -21,4 +25,4 @@ async def on_message(message):
     print(f'{message.author} said {message.content}')
     print(dir(message))
 
-client.run('OTQyMTgwOTI5OTk1MTUzNDYw.YggwXg.J0I2pk6vFaGiv8F2hWUfYTDd9v0')
+client.run(os.getenv('API_KEY'))
